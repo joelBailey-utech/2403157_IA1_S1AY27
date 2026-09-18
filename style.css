@@ -290,3 +290,80 @@ input[type="email"] {
 
     .student-id { width: 140px; }
 }
+/* Marker colour for ordered lists inside cards */
+.card ol li::marker {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Quote block spacing */
+.quote-block {
+    margin: 1.5rem 0;
+}
+
+/* References section styling */
+.card h3 + ol {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}/* ============================================
+   RESUME & PROJECT TABLE STYLES
+   ============================================ */
+.resume-header {
+    padding: 1rem 0;
+}
+
+.resume-header a {
+    font-weight: 600;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--secondary-color);
+    margin: 1rem 0 1.5rem;
+}
+
+/* Project table */
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+}
+
+.project-table th,
+.project-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.project-table th {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-family: var(--font-heading);
+    letter-spacing: 0.5px;
+}
+
+.project-table tr:nth-child(even) {
+    background-color: #faf7f0;
+}
+
+.project-table tr:hover {
+    background-color: #fff3e0;
+}
+
+.project-table a {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+/* Responsive table — horizontal scroll on small screens */
+@media (max-width: 768px) {
+    .project-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
